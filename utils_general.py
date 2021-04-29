@@ -38,8 +38,10 @@ import sys
 
 def PrintException(logger = None):
     """
-    Prints real exception:
-        "EXCEPTION IN (<ipython-input-1414-7f2a340f6b82>, LINE 15 "print(1/0)"): division by zero"
+    Prints real exception
+    E.G.: "EXCEPTION IN (<ipython-input-1414-7f2a340f6b82>, LINE 15 "print(1/0)"): division by zero"
+
+    Adapted from: https://stackoverflow.com/a/65748071
     """
 
     exc_type, exc_obj, tb = sys.exc_info()
